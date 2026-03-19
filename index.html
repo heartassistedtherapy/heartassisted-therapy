@@ -227,6 +227,21 @@
             margin: 16px 0;
         }
 
+        /* ── QR CODE ── */
+        .qr-link img {
+            width: 180px;
+            height: 180px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ddd;
+            padding: 6px;
+            background: #fff;
+        }
+
+        .qr-link:hover img {
+            border-color: #1155cc;
+        }
+
         @media (max-width: 600px) {
             .nav-links {
                 display: none;
@@ -617,7 +632,22 @@
                 naam"</em>
         </div>
 
-        <p><em>Betaling kan ook met QR-code: [QR-code volgt]</em></p>
+        <p><em>Betaling kan ook met QR-code:</em></p>
+        <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=520&info=HAT%20Basic%20Workshop%202026&bic=KREDBEBB"
+            target="_blank" class="qr-link">
+            <img src="/qr-code.png" alt="QR code betaling — klik om te betalen" style="
+            width: 180px;
+            height: 180px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            padding: 6px;
+            background: #fff;
+          " />
+        </a>
+        <p style="font-size: 13px; color: #666">
+            Scan met uw bankapp om te betalen. Vergeet niet uw volledige naam te
+            vermelden als mededeling.
+        </p>
 
         <hr />
 
@@ -658,7 +688,8 @@
 
         <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 16px">
             <div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVvSY0V8Az6HnSBMdLGMrNsVSCLSDo8aG3oSL9z1IBIYk1gg/viewform?usp=publish-editor" style="
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVvSY0V8Az6HnSBMdLGMrNsVSCLSDo8aG3oSL9z1IBIYk1gg/viewform?usp=publish-editor"
+                    style="
               display: inline-block;
               background: #1a1a2e;
               color: #fff;
@@ -700,7 +731,10 @@
     </div>
 
     <footer>
-        <p>© Heart Assisted Therapy</p>
+        <p>
+            © Heart Assisted Therapy &nbsp;·&nbsp; Walter De Jongh &nbsp;·&nbsp;
+            <a href="mailto:walter.dejongh@skynet.be">walter.dejongh@skynet.be</a>
+        </p>
     </footer>
 </body>
 
