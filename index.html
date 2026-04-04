@@ -5,253 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>H.A.T. (Psychotherapie) – Workshop</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            color: #222;
-            background: #fff;
-            line-height: 1.7;
-        }
-
-        /* ── NAV ── */
-        .nav-bar {
-            background: #1a1a2e;
-        }
-
-        .nav-inner {
-            max-width: 960px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            height: 56px;
-        }
-
-        .nav-title {
-            color: #fff;
-            font-size: 15px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .nav-title span {
-            color: #aac;
-            font-weight: normal;
-            margin-left: 8px;
-            font-size: 13px;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 24px;
-        }
-
-        .nav-links a {
-            color: #ccd;
-            text-decoration: none;
-            font-size: 13px;
-        }
-
-        .nav-links a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-
-        /* ── PAGE ── */
-        .page {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 30px 24px 60px;
-        }
-
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #111;
-            margin: 32px 0 14px;
-            line-height: 1.3;
-        }
-
-        h1:first-child {
-            margin-top: 10px;
-        }
-
-        h2 {
-            font-size: 18px;
-            font-weight: bold;
-            color: #111;
-            margin: 28px 0 10px;
-        }
-
-        p {
-            margin-bottom: 12px;
-            color: #222;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        a {
-            color: #1155cc;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        strong {
-            font-weight: bold;
-        }
-
-        em {
-            font-style: italic;
-        }
-
-        hr {
-            border: none;
-            border-top: 1px solid #ddd;
-            margin: 28px 0;
-        }
-
-        ul {
-            padding-left: 22px;
-            margin: 10px 0 16px;
-        }
-
-        ul li {
-            margin-bottom: 5px;
-        }
-
-        /* ── QUOTE ── */
-        .quote-block {
-            border-left: 3px solid #bbb;
-            padding: 10px 16px;
-            margin: 14px 0;
-            color: #444;
-            font-style: italic;
-            background: #fafafa;
-        }
-
-        /* ── IBAN ── */
-        .iban-block {
-            background: #f7f7f7;
-            border: 1px solid #ddd;
-            border-left: 4px solid #333;
-            padding: 14px 18px;
-            margin: 16px 0;
-            font-size: 14px;
-            line-height: 2;
-        }
-
-        /* ── FORM TABLE ── */
-        .form-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 14px;
-            font-size: 14px;
-        }
-
-        .form-table td {
-            border: 1px solid #ccc;
-            padding: 8px 12px;
-            vertical-align: top;
-        }
-
-        .form-table td:first-child {
-            background: #f5f5f5;
-            width: 290px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .form-table td:last-child {
-            color: #aaa;
-            font-style: italic;
-        }
-
-        /* ── ANNULATIE ── */
-        .ann-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 12px;
-            font-size: 14px;
-        }
-
-        .ann-table th {
-            background: #333;
-            color: #fff;
-            padding: 9px 12px;
-            text-align: left;
-            font-weight: bold;
-            font-size: 13px;
-        }
-
-        .ann-table td {
-            border: 1px solid #ddd;
-            padding: 8px 12px;
-        }
-
-        .ann-table tr:nth-child(even) td {
-            background: #f9f9f9;
-        }
-
-        /* ── FOOTER ── */
-        footer {
-            background: #f2f2f2;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            padding: 18px;
-            font-size: 13px;
-            color: #666;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #1155cc;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 16px 0;
-        }
-
-        /* ── QR CODE ── */
-        .qr-link img {
-            width: 180px;
-            height: 180px;
-            margin: 8px 0;
-            display: block;
-            border: 1px solid #ddd;
-            padding: 6px;
-            background: #fff;
-        }
-
-        .qr-link:hover img {
-            border-color: #1155cc;
-        }
-
-        @media (max-width: 600px) {
-            .nav-links {
-                display: none;
-            }
-
-            .form-table td:first-child {
-                width: 140px;
-            }
-        }
-    </style>
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -635,7 +389,7 @@
         <p><em>Betaling kan ook met QR-code:</em></p>
         <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=520&info=HAT%20Basic%20Workshop%202026&bic=KREDBEBB"
             target="_blank" class="qr-link">
-            <img src="/qr-code.png" alt="QR code betaling — klik om te betalen" style="
+            <img src="./qr-code.png" alt="QR code betaling — klik om te betalen" style="
             width: 180px;
             height: 180px;
             margin: 8px 0;
@@ -727,6 +481,11 @@
                     en klik op Verzenden.
                 </p>
             </div>
+        </div>
+        <div>
+            <a href="https://buy.stripe.com/test_3cIbJ00tZeF33EIcogbMQ00" target="_blank">
+                Pay!
+            </a>
         </div>
     </div>
 
