@@ -2,6 +2,10 @@ backend:
   name: git-gateway
   branch: main
 
+media_folder: "images/uploads"
+
+local_backend: true
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -12,3 +16,4 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
+          - { label: "wat is HAT", name: "what-is-hat", widget: "markdown" }
