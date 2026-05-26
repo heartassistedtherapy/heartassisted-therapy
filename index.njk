@@ -1,6 +1,6 @@
 ---
-title: "My Course"
 description: "Welcome to my course!"
+
 what-is-hat: "Hat is very cool"
 ---
 
@@ -28,62 +28,29 @@ what-is-hat: "Hat is very cool"
     </div>
 
     <div class="page">
-        <h1>Heart-Assisted Therapy</h1>
-
+        <h1>{{ text.title }}</h1>
         <hr />
 
-        {{ what-is-hat }}
+        {{ text.whatIsHat | markdown | safe }}
         <hr />
 
         <!-- OORSPRONG -->
-        <h1 id="oorsprong">Hoe het begon : oorsprong van de H.A.T.</h1>
+        <h1 id="oorsprong">{{ text.originTitle }}Hoe het begon : oorsprong van de H.A.T.</h1>
 
         <p><strong>De Heart Assisted Therapy ©.</strong></p>
         <p><strong>Hoe het begon.</strong></p>
 
-        <p>
-            Ik leerde <strong>John Diepold</strong> kennen in 2005 tijdens een
-            seminarie in Utrecht. Wat mij opviel, was zijn originele manier om aan
-            psychotherapie te doen. Fascinerend vond ik vooral zijn manier van
-            kijken naar psychologische evolutie. Hoewel John heel wat theorieën uit
-            de psychologie in zijn achterhoofd heeft, behoudt hij de
-            nieuwsgierigheid van een kind. Het is zoals een kunstenaar, die naar de
-            wereld kijkt vanuit een onbevangen verwondering.
-        </p>
-
-        <p>
-            Deze bijna kinderlijke nieuwsgierigheid gaf hem de inspiratie om zijn
-            nieuwe methode te ontwikkelen. Hij heeft een
-            <strong>echte ontdekking gedaan: de energie van het hart hanteren in het
-                therapeutisch proces.</strong>
-            Bovendien integreerde hij als psycholoog zijn rijke kennis van 30 jaar
-            uit meerdere psychotherapeutische methoden om een uitgebalanceerde
-            werkwijze te ontwikkelen.
-        </p>
-
+        {{ text.originText | markdown | safe }}
         <p>
             <strong>De fundamenten van de Heart Assisted Therapy : de
                 Hart-Brein-Connectie.</strong>
         </p>
 
-        <p>
-            De ontdekking van de hart-brein-connectie was dè sleutel tot de
-            ontwikkeling van de H.A.T. John Diepold werkte eerst jarenlang met
-            'klassieke' psychotherapeutische methoden : cognitieve therapie,
-            experiëntieel (Carl Rogers), Gestalttherapie, Focusing (Gendlin), en met
-            de hypnose van Milton Erickson, mindfullness, EMDR en ook TFT (Thought
-            Field Therapy).
-        </p>
-
-        <p>
-            <strong>Maar…</strong> toen hij het <strong>hart</strong> betrok in het
-            psychotherapeutisch proces, ontstond er opeens een nieuwe dynamiek bij
-            zijn cliënten. Hij ondervond dat, toen hij de handen kruiselings op het
-            hart liet leggen, het proces van de cliënt kon verdiepen en bevorderen.
-            Dit betekende een doorbraak en tegelijk een paradigma-shift.
-        </p>
+        {{ text.fundamenten | markdown | safe }}
 
         <p><strong>De effectiviteit van de H.A.T. blijkt uit :</strong></p>
+        
+        {{ text.caseStudies | markdown | safe }}
 
         <p>
             <strong>A. Een aantal case-studies (*).</strong> De effectiviteit van
@@ -152,28 +119,16 @@ what-is-hat: "Hat is very cool"
         </p>
 
         <ul class="reasons-grid">
-            <li class="reasons-card">Snel aan te leren, in twee dagen</li>
-            <li class="reasons-card">Toepasselijk voor de meeste emotionele en psychische problemen.</li>
-            <li class="reasons-card">
-                Reduceert gelijktijdig: storende intense emoties, piekergedachten en
-                fysische gewaarwordingen.
-            </li>
-            <li class="reasons-card">
-                Krachtig en efficiënt voor psychotrauma, depressie en angsten en
-                nuttig bij verslaving en OCD.
-            </li>
-            <li class="reasons-card">
-                Weinig intense arousal tijdens de sessie, wat vooral nuttig is bij
-                psychotrauma.
-            </li>
-            <li class="reasons-card">Tijdsbesparend en toch diepgaand.</li>
-            <li class="reasons-card">Combineerbaar met elke psychotherapeutische benadering.</li>
-            <li class="reasons-card">
-                Leidt tot meer emotioneel evenwicht, innerlijke rust en verbeterd
-                zelfvertrouwen.
-            </li>
-            <li class="reasons-card">Blijvend resultaat.</li>
-            <li class="reasons-card">Aangenaam om als psychotherapeut mee te werken.</li>
+            <li class="reasons-card">{{ text.reden1 }}</li>
+            <li class="reasons-card">{{ text.reden2 }}</li>
+            <li class="reasons-card">{{ text.reden3 }}</li>
+            <li class="reasons-card">{{ text.reden4 }}</li>
+            <li class="reasons-card">{{ text.reden5 }}</li>
+            <li class="reasons-card">{{ text.reden6 }}</li>
+            <li class="reasons-card">{{ text.reden7 }}</li>
+            <li class="reasons-card">{{ text.reden8 }}</li>
+            <li class="reasons-card">{{ text.reden9 }}</li>
+            <li class="reasons-card">{{ text.reden10 }}</li>
         </ul>
 
         <img src="https://duyn491kcolsw.cloudfront.net/files/3e/3ev/3evmyq.jpg?ph=b6b97daf17"
@@ -187,14 +142,12 @@ what-is-hat: "Hat is very cool"
         </p>
 
         <ul>
-            <li>Oorsprong en theoretische basis van de H.A.T. kennen.</li>
-            <li>Het basisprotocol kennen.</li>
-            <li>De H.A.T. tijdens het practicum kunnen toepassen als therapeut.</li>
-            <li>De H.A.T. in de rol van cliënt ervaren tijdens het practicum.</li>
-            <li>Observaties en ervaringen bespreken.</li>
-            <li>
-                De H.A.T. kunnen toepassen in de eigen praktijk als psychotherapeut.
-            </li>
+            <li>{{ text.doelstelling1 }}</li>
+            <li>{{ text.doelstelling2 }}</li>
+            <li>{{ text.doelstelling3 }}</li>
+            <li>{{ text.doelstelling4 }}</li>
+            <li>{{ text.doelstelling5 }}</li>
+            <li>{{ text.doelstelling6 }}</li>
         </ul>
 
         <hr />
