@@ -1,4 +1,4 @@
-const title = "Heart-Assisted Therapy";
+const title = "Heart-Assisted Therapy (Groetjes Bram)";
 const whatIsHat = `__Je bent hartelijk uitgenodigd voor de opleiding in de H.A.T. (Heart Assisted Therapy).__
 
 H.A.T. is een verrassend eenvoudige en effectieve methode in het veld van de psychotherapie. Het helpt emotionele verstoringen relatief snel en blijvend loslaten.
