@@ -124,16 +124,9 @@
         </p>
 
         <ul class="reasons-grid">
-            <li class="reasons-card">{{ content.reden1 }}</li>
-            <li class="reasons-card">{{ content.reden2 }}</li>
-            <li class="reasons-card">{{ content.reden3 }}</li>
-            <li class="reasons-card">{{ content.reden4 }}</li>
-            <li class="reasons-card">{{ content.reden5 }}</li>
-            <li class="reasons-card">{{ content.reden6 }}</li>
-            <li class="reasons-card">{{ content.reden7 }}</li>
-            <li class="reasons-card">{{ content.reden8 }}</li>
-            <li class="reasons-card">{{ content.reden9 }}</li>
-            <li class="reasons-card">{{ content.reden10 }}</li>
+            {% for reden in content.redenen %}
+                <li>{{ reden }}</li>
+            {% endfor %}
         </ul>
 
         <img src="https://duyn491kcolsw.cloudfront.net/files/3e/3ev/3evmyq.jpg?ph=b6b97daf17"
@@ -147,12 +140,9 @@
         </p>
 
         <ul>
-            <li>{{ content.doelstelling1 }}</li>
-            <li>{{ content.doelstelling2 }}</li>
-            <li>{{ content.doelstelling3 }}</li>
-            <li>{{ content.doelstelling4 }}</li>
-            <li>{{ content.doelstelling5 }}</li>
-            <li>{{ content.doelstelling6 }}</li>
+            {% for doel in content.doelstellingen %}
+                <li>{{ doel }}</li>
+            {% endfor %}
         </ul>
 
         <hr />
