@@ -37,17 +37,17 @@
         <h1>{{ content.title }}</h1>
         <hr />
 
-        <p style="white-space-collapse:preserve">{{ content.whatIsHat }}
-        <p>
+        {{ content.what_is_hat | markdown | safe }}
+        
             <hr />
 
             <!-- OORSPRONG -->
-        <h1 id="oorsprong">{{ content.originTitle }}Hoe het begon : oorsprong van de H.A.T.</h1>
+        <h1 id="oorsprong">{{ content.origin_title }}Hoe het begon : oorsprong van de H.A.T.</h1>
 
         <p><strong>De Heart Assisted Therapy ©.</strong></p>
         <p><strong>Hoe het begon.</strong></p>
 
-        {{ content.originText | markdown | safe }}
+        {{ content.origin_text | markdown | safe }}
         <p>
             <strong>De fundamenten van de Heart Assisted Therapy : de
                 Hart-Brein-Connectie.</strong>

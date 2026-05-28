@@ -10,7 +10,7 @@ collections:
     files:
       - name: "content"
         label: "Main Content"
-        file: "_data/content.yml"
+        file: "_data/content.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Introductie tekst", name: "what_is_hat", widget: "markdown" }
