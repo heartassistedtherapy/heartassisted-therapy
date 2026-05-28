@@ -13,6 +13,7 @@ collections:
         file: "_data/content.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Uitnodiging", name: "uitnodiging", widget: "string" }
           - { label: "Introductie tekst", name: "what_is_hat", widget: "markdown" }
           - { label: "Oorsprong titel", name: "origin_title", widget: "string" }
           - { label: "Oorsprong tekst", name: "origin_text", widget: "markdown" }
