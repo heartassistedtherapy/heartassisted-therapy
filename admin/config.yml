@@ -2,18 +2,26 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
-
-local_backend: true
+media_folder: "images"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "content"
+    label: "Website Content"
     files:
-      - label: "Home Page"
-        name: "home"
-        file: "index.html"
+      - name: "content"
+        label: "Main Content"
+        file: "_data/content.yml"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "wat is HAT", name: "what-is-hat", widget: "markdown" }
+          - { label: "Introductie tekst", name: "what_is_hat", widget: "markdown" }
+          - { label: "Oorsprong titel", name: "origin_title", widget: "string" }
+          - { label: "Oorsprong tekst", name: "origin_text", widget: "markdown" }
+          - { label: "Fundamenten", name: "fundamenten", widget: "markdown" }
+          - label: "Redenen"
+            name: "redenen"
+            widget: "list"
+            field: { label: "Reden", name: "reden", widget: "string" }
+          - label: "Doelstellingen"
+            name: "doelstellingen"
+            widget: "list"
+            field: { label: "Doelstelling", name: "doelstelling", widget: "string" }
