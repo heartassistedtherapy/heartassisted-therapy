@@ -34,26 +34,26 @@
     </div>
 
     <div class="page">
-        <h1>{{ text.title }}</h1>
+        <h1>{{ content.title }}</h1>
         <hr />
 
-        <p style="white-space-collapse:preserve">{{ text.whatIsHat }}
+        <p style="white-space-collapse:preserve">{{ content.whatIsHat }}
         <p>
             <hr />
 
             <!-- OORSPRONG -->
-        <h1 id="oorsprong">{{ text.originTitle }}Hoe het begon : oorsprong van de H.A.T.</h1>
+        <h1 id="oorsprong">{{ content.originTitle }}Hoe het begon : oorsprong van de H.A.T.</h1>
 
         <p><strong>De Heart Assisted Therapy ©.</strong></p>
         <p><strong>Hoe het begon.</strong></p>
 
-        {{ text.originText | markdown | safe }}
+        {{ content.originText | markdown | safe }}
         <p>
             <strong>De fundamenten van de Heart Assisted Therapy : de
                 Hart-Brein-Connectie.</strong>
         </p>
 
-        {{ text.fundamenten | markdown | safe }}
+        {{ content.fundamenten | markdown | safe }}
 
         <p><strong>De effectiviteit van de H.A.T. blijkt uit :</strong></p>
 
@@ -124,16 +124,16 @@
         </p>
 
         <ul class="reasons-grid">
-            <li class="reasons-card">{{ text.reden1 }}</li>
-            <li class="reasons-card">{{ text.reden2 }}</li>
-            <li class="reasons-card">{{ text.reden3 }}</li>
-            <li class="reasons-card">{{ text.reden4 }}</li>
-            <li class="reasons-card">{{ text.reden5 }}</li>
-            <li class="reasons-card">{{ text.reden6 }}</li>
-            <li class="reasons-card">{{ text.reden7 }}</li>
-            <li class="reasons-card">{{ text.reden8 }}</li>
-            <li class="reasons-card">{{ text.reden9 }}</li>
-            <li class="reasons-card">{{ text.reden10 }}</li>
+            <li class="reasons-card">{{ content.reden1 }}</li>
+            <li class="reasons-card">{{ content.reden2 }}</li>
+            <li class="reasons-card">{{ content.reden3 }}</li>
+            <li class="reasons-card">{{ content.reden4 }}</li>
+            <li class="reasons-card">{{ content.reden5 }}</li>
+            <li class="reasons-card">{{ content.reden6 }}</li>
+            <li class="reasons-card">{{ content.reden7 }}</li>
+            <li class="reasons-card">{{ content.reden8 }}</li>
+            <li class="reasons-card">{{ content.reden9 }}</li>
+            <li class="reasons-card">{{ content.reden10 }}</li>
         </ul>
 
         <img src="https://duyn491kcolsw.cloudfront.net/files/3e/3ev/3evmyq.jpg?ph=b6b97daf17"
@@ -147,12 +147,12 @@
         </p>
 
         <ul>
-            <li>{{ text.doelstelling1 }}</li>
-            <li>{{ text.doelstelling2 }}</li>
-            <li>{{ text.doelstelling3 }}</li>
-            <li>{{ text.doelstelling4 }}</li>
-            <li>{{ text.doelstelling5 }}</li>
-            <li>{{ text.doelstelling6 }}</li>
+            <li>{{ content.doelstelling1 }}</li>
+            <li>{{ content.doelstelling2 }}</li>
+            <li>{{ content.doelstelling3 }}</li>
+            <li>{{ content.doelstelling4 }}</li>
+            <li>{{ content.doelstelling5 }}</li>
+            <li>{{ content.doelstelling6 }}</li>
         </ul>
 
         <hr />
