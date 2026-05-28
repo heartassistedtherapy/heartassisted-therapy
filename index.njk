@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>H.A.T. (Psychotherapie) – Workshop</title>
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -25,10 +37,11 @@
         <h1>{{ text.title }}</h1>
         <hr />
 
-        {{ text.whatIsHat | markdown | safe }}
-        <hr />
+        <p style="white-space-collapse:preserve">{{ text.whatIsHat }}
+        <p>
+            <hr />
 
-        <!-- OORSPRONG -->
+            <!-- OORSPRONG -->
         <h1 id="oorsprong">{{ text.originTitle }}Hoe het begon : oorsprong van de H.A.T.</h1>
 
         <p><strong>De Heart Assisted Therapy ©.</strong></p>
@@ -43,7 +56,7 @@
         {{ text.fundamenten | markdown | safe }}
 
         <p><strong>De effectiviteit van de H.A.T. blijkt uit :</strong></p>
-        
+
         <p>
             <strong>A. Een aantal case-studies (*).</strong> De effectiviteit van
             H.A.T. is aangetoond door een aantal case-studies. En een belangrijk
