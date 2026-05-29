@@ -153,135 +153,54 @@
         <h2 id="praktisch"><strong>Basic Workshop H.A.T. - Praktisch</strong></h2>
 
         {% for praktisch in content.praktisch %}
-        <p><strong>{{ praktisch.titel }}</strong></p>
+        <h3><strong>{{ praktisch.titel }}</strong></h3>
         {{ praktisch.uitleg | markdown | safe}}
         {% endfor %}
-        <p><strong>1. Doelstelling</strong></p>
-        <p>
-            Tijdens de Basic Workshop leert u het protocol van de HAT Awareness
-            Streaming aan, zodat u er onmiddellijk mee aan de slag kan met uw
-            cliënten.
-        </p>
-
-        <p><strong>2. Methodologie.</strong></p>
-        <p>
-            De opleiding is interactief. Theoretische uiteenzettingen worden
-            afgewisseld met video's en praktische oefeningen om het protocol te
-            leren gebruiken.
-        </p>
-
-        <p><strong>3. Doelgroep</strong></p>
-        <p>
-            De opleiding richt zich tot klinisch psychologen, psychiaters,
-            orthopedagogen, liefst met een opleiding tot psychotherapeut (minstens
-            opgestart) in één van de mainstream-psychotherapeutische methoden, en
-            <strong>met minstens 3 jaar ervaring als psychotherapeut</strong> met
-            cliënten. Aansluiting bij een
-            <strong>beroepsvereniging met een ethische beroepscode</strong> is
-            vereist.
-        </p>
-        <p>
-            Erkenning: de HAT werd in 2012 door de APA (American Psychological
-            Association) als opleiding erkend. In het verleden heeft het Nederlands
-            Instituut voor Psychologen accreditatie verleend.
-        </p>
-
-        <p><strong>4. Programma</strong></p>
-        <p>
-            • Oorsprong van de Heart Assisted Therapy en van de verschillende
-            therapeutische oriëntaties, waarop de HAT gebaseerd is, met daarbij de
-            mind-body connectie en de hart-brein-wisselwerking.
-        </p>
-        <p>
-            • Aanleren van het protocol via demo en oefeningen : Exploreren van het
-            probleem en het zoeken naar de behandelfocus - Hartademhaling -
-            Acceptatiezinnen - Volledig protocol van de HAT-awareness - Future
-            Performance Imagery - Huiswerkprotocol.
-        </p>
-
-        <p><strong>5. Terugkomdag met supervisie:</strong></p>
-        <p>
-            Een <strong>terugkomdag is verplicht</strong> met het oog op
-            <strong>uitdieping van het protocol en met ruimte</strong> voor
-            <strong>supervisie om feedback te bekomen</strong> over uw werkwijze.
-            Deze tweede dag wordt ongeveer vier maanden later georganiseerd in
-            groep.
-        </p>
-        <p>Daarnaast is supervisie ook individueel mogelijk (meestal online).</p>
-
-        <p><strong>6. Locatie</strong></p>
-        <p>
-            Adres: <strong>'Friday cowork'</strong>, Lange Leemstraat 358b, 2018
-            Antwerpen, <strong>op 7 minuten</strong> wandelen van
-            <strong>Station Antwerpen-Berchem.</strong>
-            <strong>Wegbeschrijving</strong>: Ga naar buiten langs de achterkant van
-            Station Berchem, draai rechtsaf en volg de spoorweg gedurende ongeveer
-            500 m, en ga linksaf in de Lange Leemstraat nr. 358b.
-        </p>
-        <p>
-            <strong>Website:</strong>
-            <a href="https://www.antwerpen.be/zaal/friday-antwerpen-berchem-meetingspace"
-                target="_blank">https://www.antwerpen.be/zaal/friday-antwerpen-berchem-meetingspace</a>
-        </p>
-        <p>
-            <strong>De trein is het meest aan te raden vervoermiddel</strong>, gelet
-            op de ligging vlakbij het station en het ontbreken van files in de
-            spits.
-        </p>
-        <p>
-            <strong>Per auto:</strong> U kan eventueel parkeren in de ondergrondse
-            betalende parking onder het station Berchem. De ingang bevindt zich aan
-            het plein voor het station; komende vanuit de Noordersingel en draai
-            voor het plein rechtsaf.
-        </p>
-
-        <p><strong>7. Data en dagindeling</strong></p>
-        <p>
-            Vrijdag in mei of oktober 2026 (<strong>datum nog te bepalen</strong>)
-            en vrijdag in oktober '26 of februari 2027 (<strong>datum nog te bepalen</strong>).
-        </p>
-        <p>
-            Dagindeling : (Deuren 8.30u) van 9 tot 12.30u en 13u tot 17u (incl.
-            koffiepauzes) (totaal 7.30u). Tijdens de middagpauze zijn broodjes
-            voorzien (inbegrepen in de prijs).
-        </p>
-
-        <p><strong>8. Prijs</strong></p>
-        <p>
-            Prijs voor de tweedaagse workshop HAT : 520 € (550 € vanaf 1 maand voor
-            de datum),
-        </p>
-        <p>
-            <strong>Inbegrepen: syllabus, lichte lunch (broodjes) en alle
-                koffiepauzes.</strong>
-        </p>
-        <p>
-            De deelnemer ontvangt een bewijs van betaling en na afloop een
-            deelname-attest.
-        </p>
-
         <hr />
-        <!-- BETALING -->
-        <p id="betaling"><strong>9. Inschrijving en betaling</strong></p>
-        <p>
-            Om in te schrijven voor de workshop vult u het bijgevoegd
-            inschrijvingsformulier in en stuurt het via mail als bijlage op. Pas als
-            de betaling is uitgevoerd, is de inschrijving definitief en wordt ze
-            door ons bevestigd.
+
+        <h2>Inschrijving en betaling</h2>
+        {{ content.betaling_en_inschrijving | markdown | safe }}
+        <h3 id="inschrijving">Inschrijving</h3>
+        <p>Om in te schrijven kunt uw een van de onderstaande opties kiezen en daarna <a href="#betaling">betalen</a>
         </p>
-        <p>Voor de betaling schrijft u over op het rekeningnummer :</p>
+        <div style="display:flex">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVvSY0V8Az6HnSBMdLGMrNsVSCLSDo8aG3oSL9z1IBIYk1gg/viewform?usp=publish-editor"
+                target="_blank" class="form-btn">Google Form</a>
+            <a href="mailto:walter.dejongh@skynet.be?subject=Inschrijving%20HAT%20Basic%20Workshop%202026&body=Geachte%20heer%20De%20Jongh%2C%0A%0AHierbij%20schrijf%20ik%20mij%20in%20voor%20de%20HAT%20Basic%20Workshop%202026.%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0APERSOONLIJKE%20GEGEVENS%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0AVoornaam%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AFamilienaam%3A%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWoonadres%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWerkadres%20(ind.%20verschillend)%3A%20..............................%0ATelefoon%20%2F%20gsm%3A%20%20%20%20%20%20%20%20%20..............................%0AE-mailadres%3A%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWebsite%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0APROFESSIONELE%20GEGEVENS%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0ADiploma('s)%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0APsychotherapeutische%20opleiding(en)%3A%20%20%20..............................%0APsychotherapeutische%20ervaring%20(hoe%20lang)%3A%20..............................%0AAansluiting%20bij%20beroepsvereniging(en)%3A%20%20..............................%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0AMet%20vriendelijke%20groeten%2C%0A%0A.............................."
+                target="_blank" class="mail-btn">Stuur mail
+            </a>
 
-        <div class="iban-block">
-            IBAN : BE 68 7330 5406 8234 &nbsp;&nbsp;&nbsp; BIC/Swift : KREDBEBB<br />
-            Naam bestemmeling : Instituut voor Eclectische Psychologie<br />
-            <em><strong>met vermelding</strong>: "HAT Basic Workshop 2026 + Volledige
-                naam"</em>
         </div>
+        <h3 id="betaling">Betaling</h3>
+        <p>Kies een van de onderstaande opties om te betalen:</p>
+        <p style="color:var(--color-text-muted)">Vul eerst het <a href="#inschrijving">inschrijvingsformulier</a> in.
+        </p>
 
-        <p><em>Betaling kan ook met QR-code:</em></p>
-        <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=520&info=HAT%20Basic%20Workshop%202026&bic=KREDBEBB"
-            target="_blank" class="qr-link">
-            <img src="./qr-code.png" alt="QR code betaling — klik om te betalen" style="
+        <div style="display:flex">
+            <div class="pay-option">
+                <h4>Overschrijven</h4>
+                <p>Schrijf het te betalen bedrag over met deze informatie:</p>
+                <div class="iban-block">
+                    <strong>IBAN:</strong>
+                    <br>
+                    {{ content.rekeningnummer }}<br>
+                    <strong>BIC/Swift:</strong><br>
+                    KREDBEBB<br>
+                    <strong>Naam bestemmeling:</strong><br>
+                    Instituut voor Eclectische Psychologie<br>
+                    <strong>Vermelding:</strong><br>
+                    <em>{{ content.vermelding }}</em>
+                </div>
+            </div>
+            <div class="pay-option">
+                <h4>QR-code</h4>
+                <p>Scan de Qr-code en verander de vermelding zodat die dit formaat heeft:<br>
+                    <em>{{ content.vermelding }}</em><br>
+                    met uw volledige naam ingevuld.
+                </p>
+                <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=520&info=HAT%20Basic%20Workshop%202026&bic=KREDBEBB"
+                    target="_blank" class="qr-link">
+                    <img src="./qr-code.png" alt="QR code betaling — klik om te betalen" style="
             width: 180px;
             height: 180px;
             margin: 8px 0;
@@ -289,20 +208,23 @@
             padding: 6px;
             background: #fff;
           " />
-        </a>
-        <p style="font-size: 13px; color: #666">
-            Scan met uw bankapp om te betalen. Vergeet niet uw volledige naam te
-            vermelden als mededeling.
-        </p>
+                </a>
+                <em>Als je naam niet in de vermelding staat is het geen geldige inschrijving!</em>
 
-        <hr />
+            </div>
+            <!-- hide for now -->
+            <div class="pay-option" style="display:none">
+                <h4>Online betalen</h4>
+                <p>
+                    Betaal online door te klikken op deze link:<br>
+                    <a href="https://buy.stripe.com/test_7sY5kv5dw4985EC1FgfIs00">
+                        Betaal online
+                    </a>
+                </p>
+            </div>
+        </div>
 
-        <!-- ANNULATIE -->
-        <p>
-            <strong>10. Annulatie:</strong> enkel schriftelijke annulatie (mail of
-            brief) wordt aanvaard.
-        </p>
-
+        <h3 id="annulatie">Annulatie</h3>
         <table class="ann-table">
             <thead>
                 <tr>
@@ -326,110 +248,7 @@
             </tbody>
         </table>
 
-        <hr />
 
-        <!-- INSCHRIJVINGSFORMULIER -->
-        <p id="inschrijving"><strong>11. Inschrijvingsformulier</strong></p>
-        <p>Kies hoe u het inschrijvingsformulier wil invullen en verzenden:</p>
-
-        <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 16px">
-            <div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVvSY0V8Az6HnSBMdLGMrNsVSCLSDo8aG3oSL9z1IBIYk1gg/viewform?usp=publish-editor"
-                    style="
-              display: inline-block;
-              background: #1a1a2e;
-              color: #fff;
-              text-decoration: none;
-              padding: 12px 22px;
-              font-size: 14px;
-              font-weight: bold;
-              border-radius: 4px;
-            ">
-                    📋 Online invullen via Google Forms
-                </a>
-                <p style="font-size: 12px; color: #888; margin-top: 6px">
-                    Vul het formulier in via uw browser.<br />Uw gegevens worden
-                    automatisch doorgestuurd.
-                </p>
-            </div>
-
-            <div>
-                <a href="mailto:walter.dejongh@skynet.be?subject=Inschrijving%20HAT%20Basic%20Workshop%202026&body=Geachte%20heer%20De%20Jongh%2C%0A%0AHierbij%20schrijf%20ik%20mij%20in%20voor%20de%20HAT%20Basic%20Workshop%202026.%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0APERSOONLIJKE%20GEGEVENS%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0AVoornaam%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AFamilienaam%3A%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWoonadres%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWerkadres%20(ind.%20verschillend)%3A%20..............................%0ATelefoon%20%2F%20gsm%3A%20%20%20%20%20%20%20%20%20..............................%0AE-mailadres%3A%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWebsite%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0APROFESSIONELE%20GEGEVENS%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0ADiploma('s)%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0APsychotherapeutische%20opleiding(en)%3A%20%20%20..............................%0APsychotherapeutische%20ervaring%20(hoe%20lang)%3A%20..............................%0AAansluiting%20bij%20beroepsvereniging(en)%3A%20%20..............................%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0AMet%20vriendelijke%20groeten%2C%0A%0A.............................."
-                    style="
-              display: inline-block;
-              background: #fff;
-              color: #1a1a2e;
-              text-decoration: none;
-              padding: 12px 22px;
-              font-size: 14px;
-              font-weight: bold;
-              border-radius: 4px;
-              border: 2px solid #1a1a2e;
-            ">
-                    ✉️ Inschrijven via e-mail
-                </a>
-                <p style="font-size: 12px; color: #888; margin-top: 6px">
-                    Opent uw e-mailprogramma met het formulier<br />al ingevuld. Vul aan
-                    en klik op Verzenden.
-                </p>
-            </div>
-        </div>
-
-        <h2>Inschrijving en betaling</h2>
-        {{ content.betaling_en_inschrijving | markdown | safe }}
-        <h3>Inschrijving</h3>
-        <p>Om in te schrijven kun je een van de onderstaande opties kiezen:</p>
-        <div style="display:flex">
-            <a href="https://www.example.com" class="form-btn">Google Form</a>
-            <a href="mailto:walter.dejongh@skynet.be?subject=Inschrijving%20HAT%20Basic%20Workshop%202026&body=Geachte%20heer%20De%20Jongh%2C%0A%0AHierbij%20schrijf%20ik%20mij%20in%20voor%20de%20HAT%20Basic%20Workshop%202026.%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0APERSOONLIJKE%20GEGEVENS%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0AVoornaam%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AFamilienaam%3A%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWoonadres%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWerkadres%20(ind.%20verschillend)%3A%20..............................%0ATelefoon%20%2F%20gsm%3A%20%20%20%20%20%20%20%20%20..............................%0AE-mailadres%3A%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0AWebsite%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0APROFESSIONELE%20GEGEVENS%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0ADiploma('s)%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20..............................%0APsychotherapeutische%20opleiding(en)%3A%20%20%20..............................%0APsychotherapeutische%20ervaring%20(hoe%20lang)%3A%20..............................%0AAansluiting%20bij%20beroepsvereniging(en)%3A%20%20..............................%0A%0A%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%E2%80%95%0A%0AMet%20vriendelijke%20groeten%2C%0A%0A.............................."
-                class="mail-btn">Stuur mail</a>
-
-        </div>
-        <h3>Betaling</h3>
-        <p>Kies een van de onderstaande opties om te betalen:</p>
-        <div style="display:flex">
-            <div class="pay-option">
-                <h4>Overschrijven</h4>
-                <p>Schrijf het te betalen bedrag over met deze informatie:</p>
-                <div class="iban-block">
-                    <strong>IBAN:</strong>
-                    <br>
-                    {{ content.rekeningnummer }}<br>
-                    <strong>BIC/Swift:</strong><br>
-                    KREDBEBB<br>
-                    <strong>Naam bestemmeling:</strong><br>
-                    Instituut voor Eclectische Psychologie<br>
-                    <strong>Vermelding:</strong><br>
-                    <em>{{ content.vermelding }}</em>
-                </div>
-            </div>
-            <div class="pay-option">
-                <h4>QR-code</h4>
-                <p>Scan de Qr-code en verander de vermelding zodat die je eigen naam bevat.</p>
-                <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=520&info=HAT%20Basic%20Workshop%202026&bic=KREDBEBB"
-                    target="_blank" class="qr-link">
-                    <img src="./qr-code.png" alt="QR code betaling — klik om te betalen" style="
-            width: 180px;
-            height: 180px;
-            margin: 8px 0;
-            border: 1px solid #ddd;
-            padding: 6px;
-            background: #fff;
-          " />
-                </a>
-                <em>Als je naam niet in de vermelding staat is het geen geldige inschrijving!</em>
-
-            </div>
-            <div class="pay-option">
-                <h4>Online betalen</h4>
-                <p>
-                    Betaal online door te klikken op deze link:<br>
-                    <a href="https://buy.stripe.com/test_7sY5kv5dw4985EC1FgfIs00">
-                        Betaal online
-                    </a>
-                </p>
-            </div>
-        </div>
     </div>
 
     <footer>
