@@ -1,3 +1,5 @@
+local_backend:
+  url: http://localhost:8081/api/v1
 backend:
   name: git-gateway
   branch: main
@@ -12,11 +14,19 @@ collections:
         label: "Main Content"
         file: "_data/content.json"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
           - { label: "Uitnodiging", name: "uitnodiging", widget: "string" }
-          - { label: "Introductie tekst", name: "what_is_hat", widget: "markdown" }
+          - {
+              label: "Introductie tekst",
+              name: "what_is_hat",
+              widget: "markdown",
+            }
           - { label: "Oorsprong titel", name: "origin_title", widget: "string" }
-          - { label: "Oorsprong tekst", name: "origin_text", widget: "markdown" }
+          - {
+              label: "Oorsprong tekst",
+              name: "origin_text",
+              widget: "markdown",
+            }
           - { label: "Fundamenten", name: "fundamenten", widget: "markdown" }
           - label: "Redenen"
             name: "redenen"
@@ -25,4 +35,26 @@ collections:
           - label: "Doelstellingen"
             name: "doelstellingen"
             widget: "list"
-            field: { label: "Doelstelling", name: "doelstelling", widget: "string" }
+            field:
+              { label: "Doelstelling", name: "doelstelling", widget: "string" }
+          - label: "Praktisch"
+            name: "praktisch"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "titel", widget: "string" }
+              - { label: "Uitleg", name: "uitleg", widget: "markdown" }
+          - {
+              label: "Uitleg betaling en inschrijving",
+              name: "betaling_en_inschrijving",
+              widget: "markdown",
+            }
+          - { label: "Normale Prijs", name: "prijs_normaal", widget: "number" }
+          - { label: "Late Prijs", name: "prijs_telaat", widget: "number" }
+          - {
+              label: "Rekening nummer",
+              name: "rekeningnummer",
+              widget: "string",
+            }
+          - { label: "Vermelding", name: "vermelding", widget: "string" }
+          - { label: "Annulatie uitleg", name: "annulatie", widget: "markdown" }
+          - { label: "Appendix", name: "appendix", widget: "markdown" }

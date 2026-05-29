@@ -162,7 +162,6 @@ ul li {
 .iban-block {
     background: #f7f7f7;
     border: 1px solid #ddd;
-    border-left: 4px solid #333;
     padding: 14px 18px;
     margin: 16px 0;
     font-size: 14px;
@@ -284,4 +283,47 @@ img {
     background-color: var(--color-bg-card);
     /* border: 2px solid var(--color-accent); */
     color: var(--color-text-heading)
+}
+.form-btn, .mail-btn {
+    padding: 2rem;
+    margin: 3rem;
+    border-radius: 1rem;
+    border-style: solid;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.form-btn {
+    color: white;
+    background-color: purple;
+    border-color: white;
+}
+.mail-btn {
+    color: black;
+    background-color: white;
+    border-color: purple;
+}
+.mail-btn:hover {
+    color: white;
+    background-color: purple;
+    border-color: white;
+}
+.form-btn:hover {
+    color: black;
+    background-color: white;
+    border-color: purple;
+}
+.pay-option {
+    padding: 1rem;
+    flex: 1;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin: 1rem;
+    text-wrap: pretty;
+    transition: transform ease-in-out 0.5s;
+}
+.pay-option:hover {
+    transform: scale(1.02);
 }
