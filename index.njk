@@ -44,11 +44,7 @@
         <hr />
 
         <!-- OORSPRONG -->
-        <h1 id="oorsprong">{{ content.origin_title }}Hoe het begon : oorsprong van de H.A.T.</h1>
-
-        <p><strong>De Heart Assisted Therapy ©.</strong></p>
-        <p><strong>Hoe het begon.</strong></p>
-
+        <h1 id="oorsprong">{{ content.origin_title }}</h1>
         {{ content.origin_text | markdown | safe }}
         <p>
             <strong>De fundamenten van de Heart Assisted Therapy : de
@@ -117,14 +113,7 @@
         <hr />
 
         <!-- 10 REDENEN -->
-        <h1>
-            <strong>Tien redenen om de H.A.T. te leren als psychotherapeut:</strong>
-        </h1>
-
-        <p>
-            <strong>Hier vind je 10 redenen om met de H.A.T. te leren werken:</strong>
-        </p>
-
+        <h1>{{ content.redenen_titel }}</h1>
         <ul class="reasons-grid">
             {% for reden in content.redenen %}
             <li class="reasons-card">{{ reden }}</li>
