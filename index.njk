@@ -178,7 +178,9 @@
                     <strong>Naam bestemmeling:</strong><br>
                     Instituut voor Eclectische Psychologie<br>
                     <strong>Vermelding:</strong><br>
-                    <em>{{ content.vermelding }}</em>
+                    <em>{{ content.vermelding }}</em><br>
+                    <strong>Bedrag</strong><br>
+                    {{ 520 if content.is_late == false else 550 }}
                 </div>
             </div>
             <div class="pay-option">
@@ -187,9 +189,10 @@
                     <em>{{ content.vermelding }}</em><br>
                     met uw volledige naam ingevuld.
                 </p>
+                {% if content.is_late == false %}
                 <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=520&info=HAT%20Basic%20Workshop%202026&bic=KREDBEBB"
                     target="_blank" class="qr-link">
-                    <img src="./qr-code.png" alt="QR code betaling — klik om te betalen" style="
+                    <img src="./qr-code-520.png" alt="QR code betaling — klik om te betalen" style="
             width: 180px;
             height: 180px;
             margin: 8px 0;
@@ -198,6 +201,19 @@
             background: #fff;
           " />
                 </a>
+                {% else %}
+                <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=550&info=HAT%20Basic%20Workshop%202026&bic=KREDBEBB"
+                    target="_blank" class="qr-link">
+                    <img src="./qr-code-550.png" alt="QR code betaling — klik om te betalen" style="
+            width: 180px;
+            height: 180px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            padding: 6px;
+            background: #fff;
+          " />
+                </a>
+                {% endif %}
                 <em>Als je naam niet in de vermelding staat is het geen geldige inschrijving!</em>
 
             </div>

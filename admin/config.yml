@@ -49,8 +49,7 @@ collections:
               name: "betaling_en_inschrijving",
               widget: "markdown",
             }
-          - { label: "Normale Prijs", name: "prijs_normaal", widget: "number" }
-          - { label: "Late Prijs", name: "prijs_telaat", widget: "number" }
+          - { label: "Laatste maand", name: "is_late", widget: "boolean" }
           - {
               label: "Rekening nummer",
               name: "rekeningnummer",
