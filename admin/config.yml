@@ -27,8 +27,6 @@ collections:
               name: "origin_text",
               widget: "markdown",
             }
-          - { label: "Fundamenten", name: "fundamenten", widget: "markdown" }
-          - { label: "Case studies", name: "case_studies", widget: "markdown" }
           - { label: "Redenen titel", name: "redenen_titel", widget: "string" }
           - label: "Redenen"
             name: "redenen"
