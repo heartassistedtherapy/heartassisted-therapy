@@ -55,5 +55,6 @@ collections:
               widget: "string",
             }
           - { label: "Vermelding", name: "vermelding", widget: "string" }
+          - { label: "Naam Bestemmeling", name: "bestemmeling", widget: "string" }
           - { label: "Annulatie uitleg", name: "annulatie", widget: "markdown" }
           - { label: "Appendix", name: "appendix", widget: "markdown" }

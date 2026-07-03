@@ -23,11 +23,18 @@
 <body>
     <div class="nav-bar">
         <div class="nav-inner">
-            <a class="nav-title" href="#">H.A.T. (Psychotherapie) <span>Workshop</span></a>
+            <a class="nav-title" href="#">
+                <img style="height:2.5em; display: inline; vertical-align:middle; padding-right: 4px"
+                    src="https://b6b97daf17.cbaul-cdnwnd.com/bc522009c017742993e2f5b223e6381e/200000007-8bdfa8bdfe/HAT.jpg?ph=b6b97daf17"
+                    alt="HAT afbeelding" />
+                H.A.T.
+            </a>
+
+
             <ul class="nav-links">
                 <li><a href="#wat-is-hat">Startpagina</a></li>
-                <li><a href="#oorsprong">Over ons</a></li>
-                <li><a href="#praktisch">Praktisch</a></li>
+                <li><a href="#oorsprong">Oorsprong H.A.T.</a></li>
+                <li><a href="#praktisch">Opleiding</a></li>
                 <li><a href="#inschrijving">Inschrijving</a></li>
             </ul>
         </div>
@@ -64,10 +71,11 @@
         <!-- OORSPRONG -->
         <h1 id="oorsprong">{{ content.origin_title }}</h1>
         {{ content.origin_text | markdown | safe }}
+        <hr />
 
         <!-- DOELSTELLINGEN -->
         <p>
-            <strong>Doelstellingen van de workshop: Wat leert de deelnemer ?</strong>
+            <strong>Doelstellingen van de opleiding: wat leert de deelnemer ?</strong>
         </p>
 
         <ul>
@@ -116,7 +124,8 @@
                     <strong>BIC/Swift:</strong><br>
                     KREDBEBB<br>
                     <strong>Naam bestemmeling:</strong><br>
-                    Instituut voor Eclectische Psychologie<br>
+                    {{ content.bestemmeling }}<br>
+                    <!-- Instituut voor Eclectische Psychologie<br> -->
                     <strong>Vermelding:</strong><br>
                     <em>{{ content.vermelding }}</em><br>
                     <strong>Bedrag</strong><br>
@@ -130,9 +139,10 @@
                     met uw volledige naam ingevuld.
                 </p>
                 {% if content.is_late == false %}
-                <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=520&bic=KREDBEBB"
+                <a href="https://epc-qr.eu/?bname={{ content.bestemmeling | urlencode }}&iban=BE68733054068234&euro=520&bic=KREDBEBB"
                     target="_blank" class="qr-link">
-                    <img src="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=520&bic=KREDBEBB" alt="QR code betaling — klik om te betalen" style="
+                    <img src="https://epc-qr.eu/?bname={{ content.bestemmeling | urlencode }}&iban=BE68733054068234&euro=520&bic=KREDBEBB"
+                        alt="QR code betaling — klik om te betalen" style="
             width: 180px;
             height: 180px;
             margin: 8px 0;
@@ -142,9 +152,10 @@
           " />
                 </a>
                 {% else %}
-                <a href="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=550&&bic=KREDBEBB"
+                <a href="https://epc-qr.eu/?bname={{ content.bestemmeling | urlencode }}&iban=BE68733054068234&euro=550&bic=KREDBEBB"
                     target="_blank" class="qr-link">
-                    <img src="https://epc-qr.eu/?bname=Instituut%20voor%20Eclectische%20Psychologie&iban=BE68733054068234&euro=550&bic=KREDBEBB" alt="QR code betaling — klik om te betalen" style="
+                    <img src="https://epc-qr.eu/?bname={{ content.bestemmeling | urlencode }}&iban=BE68733054068234&euro=550&bic=KREDBEBB"
+                        alt="QR code betaling — klik om te betalen" style="
             width: 180px;
             height: 180px;
             margin: 8px 0;
@@ -152,9 +163,9 @@
             padding: 6px;
             background: #fff;
           " />
-                </a>
-                {% endif %}
-                <em>Als je naam niet in de vermelding staat is het geen geldige inschrijving!</em>
+
+                    {% endif %}
+                    <em>Als je naam niet in de vermelding staat is het geen geldige inschrijving!</em>
 
             </div>
             <!-- hide for now -->

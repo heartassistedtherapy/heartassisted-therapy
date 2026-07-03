@@ -20,7 +20,7 @@
   "betaling_en_inschrijving": "### Prijs\n\nPrijs voor de tweedaagse opleiding H.A.T.  :\n\n520 € (550 € vanaf 1 maand voor de datum), \n\n**Inbegrepen:  syllabus, lichte lunch bestaande uit soep en belegde broodjes, en de koffiepauzes.**\n\nDe deelnemer ontvangt een bewijs van betaling en na afloop een deelname-attest.\n\n**Volg de instructies i**n de sectie [Inschrijven](#inschrijving) en [Betalen](#betaling) om u in te schrijven voor de cursus.\n\nAnnulatie: voor informatie hier ga naar [Annulatie](#annulatie).\n\nGDPR**:**  wij respecteren de wetgeving over de privacy. Uw gegevens worden uitsluitend gebruikt met betrekking tot deze opleiding.",
   "redenen_titel": "l ",
   "vermelding": "\"H.A.T. Basisopleiding 2026-2027 + Volledige naam\"",
-  "rekeningnummer": "BE 68 7330 5406 8234 Naam bestemmeling:  H.A.T. België",
+  "rekeningnummer": "BE 68 7330 5406 8234",
   "praktisch": [
     {
       "titel": "1. Doelstelling",
@@ -57,6 +57,7 @@
     "Observaties en ervaringen bespreken.",
     "De H.A.T. kunnen toepassen in de eigen praktijk als psychotherapeut."
   ],
+  "bestemmeling": "H.A.T. België",
   "is_late": false,
   "origin_title": "Hoe het begon : oorsprong en ontwikkeling van de H.A.T."
 }
