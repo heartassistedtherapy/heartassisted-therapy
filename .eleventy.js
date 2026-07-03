@@ -7,8 +7,6 @@ const md = markdownIt({
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("qr-code-520.png");
-    eleventyConfig.addPassthroughCopy("qr-code-550.png");
     eleventyConfig.addPassthroughCopy("admin");
     eleventyConfig.addFilter("markdown", (content) => md.render(content));
     eleventyConfig.addFilter("markdown", (content) => {
