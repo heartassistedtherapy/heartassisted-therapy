@@ -43,7 +43,8 @@
     <div class="page">
         <h1>{{ content.title }}</h1>
         <hr />
-        <h3 style="color:blue;">Je bent hartelijk uitgenodigd voor de opleiding in de H.A.T. (Heart Assisted Therapy).
+        <h3 style="color:blue;">
+            {{ content.uitnodiging }}
         </h3>
 
         {{ content.what_is_hat | markdown | safe }}
