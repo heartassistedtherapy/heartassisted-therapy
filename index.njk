@@ -74,19 +74,6 @@
         {{ content.origin_text | markdown | safe }}
         <hr />
 
-        <!-- DOELSTELLINGEN -->
-        <p>
-            <strong>Doelstellingen van de opleiding: wat leert de deelnemer ?</strong>
-        </p>
-
-        <ul>
-            {% for doel in content.doelstellingen %}
-            <li>{{ doel }}</li>
-            {% endfor %}
-        </ul>
-
-        <hr />
-
         <!-- PRAKTISCH -->
         <h2 id="praktisch"><strong>Basisopleiding H.A.T.</strong></h2>
 

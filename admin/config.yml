@@ -32,11 +32,6 @@ collections:
             name: "redenen"
             widget: "list"
             field: { label: "Reden", name: "reden", widget: "string" }
-          - label: "Doelstellingen"
-            name: "doelstellingen"
-            widget: "list"
-            field:
-              { label: "Doelstelling", name: "doelstelling", widget: "string" }
           - label: "Praktisch"
             name: "praktisch"
             widget: "list"
