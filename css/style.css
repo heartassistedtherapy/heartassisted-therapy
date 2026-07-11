@@ -345,6 +345,8 @@ img {
 .pay-option:hover {
     transform: scale(1.02);
 }
+
 #appendix * {
-    color: var(--color-text-muted)
+    color: var(--color-text-muted);
+    font-size: small;
 }
