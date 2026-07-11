@@ -93,7 +93,7 @@ body {
 .page {
     max-width: 860px;
     margin: 0 auto;
-    padding: 30px 24px 60px;
+    padding: 30px 24px 20px;
 }
 
 h1 {
@@ -344,4 +344,7 @@ img {
 
 .pay-option:hover {
     transform: scale(1.02);
+}
+#appendix * {
+    color: var(--color-text-muted)
 }
