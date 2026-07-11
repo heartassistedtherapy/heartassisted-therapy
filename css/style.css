@@ -206,31 +206,6 @@ ul li {
     font-style: italic;
 }
 
-/* ── ANNULATIE ── */
-.ann-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 12px;
-    font-size: 14px;
-}
-
-.ann-table th {
-    background: #333;
-    color: #fff;
-    padding: 9px 12px;
-    text-align: left;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-.ann-table td {
-    border: 1px solid #ddd;
-    padding: 8px 12px;
-}
-
-.ann-table tr:nth-child(even) td {
-    background: #f9f9f9;
-}
 
 /* ── FOOTER ── */
 footer {
